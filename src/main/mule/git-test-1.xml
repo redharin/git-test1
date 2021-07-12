@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="git-test-1Flow" doc:id="beff8f83-d43a-4ff2-b046-1e0d2e74fe92" >
 		<http:listener doc:name="Listener" doc:id="9316d13e-f578-4584-a1a4-1b000245c020" config-ref="HTTP_Listener_config" path="/git-test1"/>
 		<set-payload value='#["git-test-success"]' doc:name="Set Payload" doc:id="96688441-5e15-475c-aeb4-9263445f51ca" />
+		<logger level="INFO" doc:name="Logger" doc:id="1b5a6238-d390-40b4-878f-c292d5a14e1c" message="success impl"/>
 	</flow>
 </mule>
